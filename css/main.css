@@ -1,14 +1,13 @@
 header {
   display: block;
-  height: 100px;
+  height: 120px;
   right: 0;
-  margin-bottom: 20px;
 }
 
 header ul {
   float: right;
   list-style: none;
-  margin: 50px;
+  margin: 60px;
   font-size: 1.9rem;
   font-weight: bolder;
 }
@@ -104,6 +103,7 @@ a:hover {
 }
 
 main {
+  margin: 0 auto;
   padding: 5%;
 }
 
