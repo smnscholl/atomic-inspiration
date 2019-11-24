@@ -1,0 +1,186 @@
+header {
+  display: block;
+  height: 100px;
+  right: 0;
+  margin-bottom: 20px;
+}
+
+header ul {
+  float: right;
+  list-style: none;
+  margin: 50px;
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+
+header ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+#green-circle {
+  -webkit-animation: rotate-circle 90s linear infinite;
+          animation: rotate-circle 90s linear infinite;
+}
+
+#orange-circle {
+  animation: rotate-circle 80s linear infinite reverse;
+}
+
+#planet {
+  -webkit-animation: planet-pulsate 2s linear infinite alternate;
+          animation: planet-pulsate 2s linear infinite alternate;
+}
+
+@-webkit-keyframes rotate-circle {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-circle {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes planet-pulsate {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes planet-pulsate {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #232931;
+  font-family: 'Montserrat', sans-serif;
+  color: #faebd7;
+}
+
+a {
+  text-decoration: none;
+  color: #4ecca3;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+a:hover {
+  color: #faebd7;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+main {
+  padding: 5%;
+}
+
+main .main-text {
+  float: left;
+  margin-bottom: 10px;
+}
+
+main .main-text .headline {
+  font-size: 5rem;
+}
+
+main .main-text .sub-headline {
+  font-size: 2.5rem;
+  line-height: 6rem;
+}
+
+main .main-text .icons {
+  letter-spacing: 0.9rem;
+  margin: 10px 0;
+}
+
+main .main-text hr {
+  margin: 50px auto 20px;
+  visibility: hidden;
+  border-color: #faebd7;
+  width: 80%;
+}
+
+main .images {
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .images svg {
+  position: absolute;
+  max-width: 70%;
+}
+
+@media (max-width: 1465px) {
+  main .main-text .headline {
+    font-size: 4rem;
+  }
+  main .main-text .sub-headline {
+    font-size: 1.5rem;
+    line-height: 6rem;
+  }
+}
+
+@media (max-width: 675px) {
+  main .main-text {
+    text-align: center;
+  }
+  main .main-text hr {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 540px) {
+  header {
+    text-align: center;
+  }
+  header ul li {
+    margin-right: 10px;
+  }
+  .images {
+    padding: 0 10% 15% 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

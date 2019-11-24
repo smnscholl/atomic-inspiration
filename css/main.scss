@@ -1,0 +1,131 @@
+@import "header";
+@import "animation";
+
+@mixin transitionLink {
+    transition: .2s ease-out;
+}
+
+$colors: ("primary": #faebd7,
+    "secondary": #232931,
+    "accent": #4ecca3);
+
+// General Elements
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: map-get($colors, secondary);
+    font-family: 'Montserrat', sans-serif;
+    color: map-get($colors, primary);
+}
+
+a {
+    text-decoration: none;
+    color: map-get($colors, accent);
+    @include transitionLink();
+
+    &:hover {
+        color: map-get($colors, primary);
+        @include transitionLink();
+    }
+}
+
+// Main Content
+
+main {
+    padding: 5%;
+
+    .main-text {
+        float: left;
+        margin-bottom: 10px;
+
+        .headline {
+            font-size: 5rem;
+        }
+
+        .sub-headline {
+            font-size: 2.5rem;
+            line-height: 6rem;
+        }
+
+        .icons {
+            letter-spacing: 0.9rem;
+            margin: 10px 0;
+        }
+
+        hr {
+            margin: 50px auto 20px;
+            visibility: hidden;
+            border-color: map-get($colors, primary);
+            width: 80%;
+        }
+    }
+
+    .images {
+        height: 500px;
+        width: 500px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            position: absolute;
+            max-width: 70%;
+        }
+    }
+}
+
+// Media Queries
+
+@media (max-width: 1465px) {
+
+    main {
+
+        .main-text {
+
+            .headline {
+                font-size: 4rem;
+            }
+
+            .sub-headline {
+                font-size: 1.5rem;
+                line-height: 6rem;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 675px) {
+    main {
+        .main-text {
+            text-align: center;
+
+            hr {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    header {
+        text-align: center;
+
+        ul li {
+            margin-right: 10px;
+        }
+    }
+
+
+
+    .images {
+        padding: 0 10% 15% 0;
+    }
+}

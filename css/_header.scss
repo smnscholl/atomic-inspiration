@@ -1,0 +1,21 @@
+// Header
+
+header {
+    display: block;
+    height: 100px;
+    right: 0;
+    margin-bottom: 20px;
+
+    ul {
+        float: right;
+        list-style: none;
+        margin: 50px;
+        font-size: 1.9rem;
+        font-weight: bolder;
+
+        li {
+            display: inline;
+            margin-right: 30px;
+        }
+    }
+}
