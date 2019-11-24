@@ -95,7 +95,6 @@ main {
 
             .sub-headline {
                 font-size: 1.5rem;
-                line-height: 6rem;
             }
         }
 
@@ -121,11 +120,21 @@ main {
         ul li {
             margin-right: 10px;
         }
+
+        .main-text {
+
+            .headline {
+                font-size: 3rem;
+            }
+
+        }
     }
 
-
-
-    .images {
-        padding: 0 10% 15% 0;
+    main {
+        .images {
+            height: 300px;
+            width: 300px;
+            padding-top: 100px;
+        }
     }
 }

@@ -159,7 +159,6 @@ main .images svg {
   }
   main .main-text .sub-headline {
     font-size: 1.5rem;
-    line-height: 6rem;
   }
 }
 
@@ -179,8 +178,13 @@ main .images svg {
   header ul li {
     margin-right: 10px;
   }
-  .images {
-    padding: 0 10% 15% 0;
+  header .main-text .headline {
+    font-size: 3rem;
+  }
+  main .images {
+    height: 300px;
+    width: 300px;
+    padding-top: 100px;
   }
 }
 /*# sourceMappingURL=main.css.map */
