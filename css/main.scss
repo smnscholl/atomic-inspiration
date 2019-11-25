@@ -9,7 +9,7 @@ $colors: ("primary": #faebd7,
     "secondary": #232931,
     "accent": #4ecca3);
 
-// General Elements
+// General Styling
 
 * {
     margin: 0;
@@ -103,18 +103,6 @@ main {
 }
 
 @media (max-width: 675px) {
-    main {
-        .main-text {
-            text-align: center;
-
-            hr {
-                visibility: visible;
-            }
-        }
-    }
-}
-
-@media (max-width: 540px) {
     header {
         text-align: center;
 
@@ -124,14 +112,23 @@ main {
     }
 
     main {
-
         .main-text {
+            text-align: center;
 
             .headline {
                 font-size: 3rem;
             }
 
+            hr {
+                visibility: visible;
+            }
         }
+    }
+}
+
+@media (max-width: 540px) {
+
+    main {
         .images {
             height: 300px;
             width: 300px;

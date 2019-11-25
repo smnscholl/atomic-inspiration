@@ -20,15 +20,24 @@ header ul li {
 #green-circle {
   -webkit-animation: rotate-circle 90s linear infinite;
           animation: rotate-circle 90s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
 }
 
 #orange-circle {
   animation: rotate-circle 80s linear infinite reverse;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
 }
 
 #planet {
   -webkit-animation: planet-pulsate 2s linear infinite alternate;
           animation: planet-pulsate 2s linear infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
 }
 
 @-webkit-keyframes rotate-circle {
@@ -163,8 +172,17 @@ main .images svg {
 }
 
 @media (max-width: 675px) {
+  header {
+    text-align: center;
+  }
+  header ul li {
+    margin-right: 10px;
+  }
   main .main-text {
     text-align: center;
+  }
+  main .main-text .headline {
+    font-size: 3rem;
   }
   main .main-text hr {
     visibility: visible;
@@ -172,15 +190,6 @@ main .images svg {
 }
 
 @media (max-width: 540px) {
-  header {
-    text-align: center;
-  }
-  header ul li {
-    margin-right: 10px;
-  }
-  main .main-text .headline {
-    font-size: 3rem;
-  }
   main .images {
     height: 300px;
     width: 300px;

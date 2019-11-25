@@ -1,16 +1,24 @@
 // Animation
 
+@mixin centering {
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
 #green-circle {
     animation: rotate-circle 90s linear infinite;
+    @include centering();
 }
 
 
 #orange-circle {
     animation: rotate-circle 80s linear infinite reverse;
+    @include centering();
 }
 
 #planet {
     animation: planet-pulsate 2s linear infinite alternate;
+    @include centering();
 }
 
 @keyframes rotate-circle {
