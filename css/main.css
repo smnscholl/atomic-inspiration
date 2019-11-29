@@ -135,7 +135,7 @@ main .main-text .icons {
 }
 
 main .main-text hr {
-  margin: 50px auto 30px;
+  margin: 50px auto 20px;
   visibility: hidden;
   border-color: #faebd7;
   width: 80%;
@@ -167,39 +167,6 @@ main .images svg {
   }
   main .main-text .sub-headline {
     font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 1220px) {
-  main .images {
-    height: 400px;
-    width: 400px;
-  }
-  main .images svg {
-    width: 70%;
-    height: 70%;
-  }
-}
-
-@media (max-width: 1111px) {
-  main .images {
-    height: 330px;
-    width: 330px;
-  }
-  main .images svg {
-    width: 60%;
-    height: 60%;
-  }
-}
-
-@media (max-width: 1024px) {
-  main .images {
-    height: 500px;
-    width: 500px;
-  }
-  main .images svg {
-    width: 100%;
-    height: 100%;
   }
 }
 
