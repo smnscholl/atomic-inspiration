@@ -14,7 +14,11 @@ header {
 
         li {
             display: inline;
-            margin-right: 30px;
+            
+        }
+
+        li + li {
+            margin-left: 30px;
         }
     }
 }

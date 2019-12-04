@@ -14,7 +14,10 @@ header ul {
 
 header ul li {
   display: inline;
-  margin-right: 30px;
+}
+
+header ul li + li {
+  margin-left: 30px;
 }
 
 #green-circle {
@@ -174,8 +177,8 @@ main .images svg {
   header {
     text-align: center;
   }
-  header ul li {
-    margin-right: 10px;
+  header ul li + li {
+    margin-left: 10px;
   }
   main .main-text {
     text-align: center;

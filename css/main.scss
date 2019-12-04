@@ -105,8 +105,8 @@ main {
     header {
         text-align: center;
 
-        ul li {
-            margin-right: 10px;
+        ul li + li {
+            margin-left: 10px;
         }
     }
 
